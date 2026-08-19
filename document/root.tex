@@ -1,0 +1,36 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{isabelle,isabellesym}
+\usepackage{amssymb}
+
+% this should be the last package used
+\usepackage{pdfsetup}
+
+% urls in roman style, theory text in math-similar italics
+\urlstyle{rm}
+\isabellestyle{it}
+
+\begin{document}
+
+\title{A fixpoint evaluator for positive datalog}
+\author{David Wang}
+\maketitle
+
+\begin{abstract}
+  A semantics supplement to the AFP \emph{Stratified\_Datalog} entry~\cite{datalogIsabelle}: a
+  fuel-free fixpoint evaluator for positive datalog programs over a finite constant universe,
+  together with two refinements of its inner loop --- assoc-list matching with a fact-driven body
+  join, and an RBT-indexed join. The evaluator is an untrusted oracle in the intended use, so it is
+  proved sound (every derived fact is derivable) but not complete.
+\end{abstract}
+
+\tableofcontents
+
+\parindent 0pt\parskip 0.5ex
+
+\input{session}
+
+\bibliographystyle{abbrv}
+\bibliography{root}
+
+\end{document}

@@ -1,0 +1,4 @@
+output/
+*.orig
+*~
+.DS_Store
